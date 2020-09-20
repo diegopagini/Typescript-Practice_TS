@@ -1,14 +1,14 @@
 // Tpo explicito
-var idUser;
+let idUser;
 idUser = true;
 idUser = 123;
 idUser = "SylasRules";
 // Tipo inferido
-var otherId;
+let otherId;
 otherId = 1;
 otherId = "2";
 otherId = false;
 console.log(otherId);
-var surprise = "hello typescript";
-var res = surprise.substring(6);
+let surprise = "hello typescript";
+const res = surprise.substring(6);
 console.log(res);

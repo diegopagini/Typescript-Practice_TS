@@ -1,32 +1,38 @@
 console.log("Hola Mundo! :)");
 // Number
 // Explicito
-var phone;
+let phone;
 phone = 1;
 phone = 54234567;
 // phone = "phone"; //arroja un error porque lo definimos cono numero
 // Inferido
-var phoneNumber = 54234567;
+let phoneNumber = 54234567;
 phoneNumber = 123;
 // phoneNumber = true; //arroja error porque el tipo de dato no es el definido.
-var hex = 0xf00d;
-var binary = 10;
-var octal = 484;
+let hex = 0xf00d;
+let binary = 0b1010;
+let octal = 0o744;
 // Tipo: Boolean
 // Tipado Explicito
-var isPro;
+let isPro;
 isPro = true;
 // isPro = 1; //error de tipado
 // Inferido
-var isUserPro = false;
+let isUserPro = false;
 isUserPro = true;
 // isUserPro = 10; //error de tipado
 // Strings
-var userName = "diego";
+let userName = "diego";
 userName = "Diego";
 // userName = true; //error: tipo string
 // Template String
 // Uso de `` back-tick
-var userInfo;
-userInfo = "\n    User Info:\n    User Name: " + userName + "\n    firstName: " + (userName + " Pagini") + "\n    phone: " + phone + "\n    isPro: " + isPro + "\n";
+let userInfo;
+userInfo = `
+    User Info:
+    User Name: ${userName}
+    firstName: ${userName + " Pagini"}
+    phone: ${phone}
+    isPro: ${isPro}
+`;
 console.log("userInfo", userInfo);

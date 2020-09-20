@@ -19,28 +19,28 @@ createPicture('Colombia Trip', '2020-03');
 createPicture('Colombia Trip');
 createPicture();
 // Flat Array Function
-var createPic = function (title, date, size) {
+let createPic = (title, date, size) => {
     // return {
     //     title: title,
     //     date: date,
     //     size: size
     // };
-    return { title: title, date: date, size: size };
+    return { title, date, size };
 };
-var picture = createPic('Platzi session', '2020-03-10', '100x100');
+const picture = createPic('Platzi session', '2020-03-10', '100x100');
 console.log('picture', picture);
 // Tipo de retorno con TypeScript
 function handleError(code, message) {
     // Procesamiento del codigo, mensaje
     if (message === 'error') {
-        throw new Error(message + ". Code error: " + code);
+        throw new Error(`${message}. Code error: ${code}`);
     }
     else {
         return 'An error has ocurred';
     }
 }
 try {
-    var result = handleError(200, 'OK'); // string
+    let result = handleError(200, 'OK'); // string
     console.log('result', result);
     result = handleError(404, 'error'); // never
     console.log('result', result);

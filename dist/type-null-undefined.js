@@ -1,14 +1,14 @@
 // Explicita
-var nullVariable;
+let nullVariable;
 nullVariable = null;
 // nullVariable = 1; // Error
-var otherVariable = null;
+let otherVariable = null;
 otherVariable = "test";
 // Undefined
-var undefinedVariable = undefined;
+let undefinedVariable = undefined;
 // undefinedVariable = "test"; Error
-var otherUndefined = undefined; //De esta manera es un Any
+let otherUndefined = undefined; //De esta manera es un Any
 // Null y Undefiden: Como subtipos
-var albumName;
+let albumName;
 // albumName = null; Error
 // albumName = undefined; Error

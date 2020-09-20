@@ -1,5 +1,5 @@
 // Type: object
-var user;
+let user;
 user = {}; //Object
 user = {
     id: 123,
@@ -9,12 +9,12 @@ user = {
 };
 console.log("user", user);
 // Object vs object(Clase JS vs Tipo TS)
-var myObj = {
+const myObj = {
     id: 123,
     username: "paparazzi",
     firstName: "Pablo",
     isPro: true
 };
-var isInstance = myObj instanceof Object;
+const isInstance = myObj instanceof Object;
 console.log(isInstance);
 console.log("user.username", myObj.username);
